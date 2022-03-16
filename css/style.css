@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font: 16px sans-serif;
 }
+body {
+  background-color: hsl(225, 100%, 94%);
+}
 .container {
   display: flex;
   flex-wrap: wrap;
