@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: 16px sans-serif;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  background-color: hsl(225, 100%, 94%);
+}
+.card {
+  width: 95%;
+  margin: 2rem auto;
+  border: 2px solid red;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: hsl(225, 100%, 98%);
+}
+.card-img img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.card-header,
+.card-content {
+  padding: 1rem;
+}
+.card-title {
+  text-align: center;
+  margin: 1rem 0;
+}
+.card-title h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: hsl(223, 47%, 23%);
+}
+.card-info {
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+}
+.card-info p {
+  line-height: 1.6;
+}
+.card-content {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 10px;
+  width: 90%;
+  margin: auto;
+  background-color: rgba(224, 232, 255, 0.5);
+}
+.card-content .content-info {
+  padding-left: 4.4rem;
+  line-height: 1.6;
+}
+.card-content .content-info h1 {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: hsl(223, 47%, 23%);
+}
+.card-content .content-info span,
+.card-button .cancel a {
+  color: hsl(224, 23%, 55%);
+}
+.card-content .music-logos {
+  position: absolute;
+  top: 15%;
+}
+.card-content .contact-edit {
+  position: absolute;
+  right: 5%;
+  top: 31%;
+}
+.card-content .contact-edit a:hover {
+  color: #776bf2;
+  text-decoration: none;
+}
+.card-button {
+  padding: 1rem;
+}
+button[type="submit"] {
+  width: 100%;
+  background-color: hsl(245, 75%, 52%);
+  padding: 1rem;
+  border-radius: 10px;
+  color: hsl(225, 100%, 98%);
+}
+button[type="submit"]:hover {
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.3);
+  transition: 300ms;
+  background-color: #776bf2;
+  padding: 0.5rem;
+}
+.card-button .cancel {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
+}
+.card-button .cancel a {
+  text-decoration: none;
+}
+.card-button .cancel a:active {
+  color: hsl(223, 47%, 23%);
+}
+.attribution {
+  text-align: center;
+  line-height: 1.6;
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(223, 47%, 23%);
+}
+.attribution a:active {
+  color: #776bf2;
+}
+@media (min-width: 1400px) {
+  body {
+    height: 100%;
+    background-color: hsl(225, 100%, 94%);
+  }
+  .card {
+    width: 25%;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(0%);
+  }
+  .attribution {
+    display: none;
+  }
+}
