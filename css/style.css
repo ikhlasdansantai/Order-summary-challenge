@@ -7,15 +7,15 @@
 body {
   background-color: hsl(225, 100%, 94%);
 }
-.container {
+main {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   padding: 1.5rem;
+  margin: auto;
   background-color: hsl(225, 100%, 94%);
 }
 .card {
-  width: 95%;
-  margin: 2rem auto;
+  margin: auto;
   border-radius: 20px;
   overflow: hidden;
   background-color: hsl(225, 100%, 98%);
@@ -112,6 +112,7 @@ button[type="submit"]:hover {
 .attribution {
   text-align: center;
   line-height: 1.6;
+  display: none;
 }
 .attribution a {
   text-decoration: none;
@@ -119,6 +120,11 @@ button[type="submit"]:hover {
 }
 .attribution a:active {
   color: #776bf2;
+}
+@media (min-width: 375px) {
+  .attribution {
+    display: inherit;
+  }
 }
 @media (min-width: 1400px) {
   body {
@@ -130,8 +136,5 @@ button[type="submit"]:hover {
     top: 50%;
     bottom: 50%;
     transform: translate(0%);
-  }
-  .attribution {
-    display: none;
   }
 }
