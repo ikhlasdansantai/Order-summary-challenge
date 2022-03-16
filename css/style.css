@@ -13,7 +13,6 @@
 .card {
   width: 95%;
   margin: 2rem auto;
-  border: 2px solid red;
   border-radius: 20px;
   overflow: hidden;
   background-color: hsl(225, 100%, 98%);
