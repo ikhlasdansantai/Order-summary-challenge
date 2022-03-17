@@ -6,16 +6,22 @@
 }
 body {
   background-color: hsl(225, 100%, 94%);
+  min-height: 100vh;
 }
 main {
   display: flex;
   justify-content: center;
   padding: 1.5rem;
-  margin: auto;
+  width: 100%;
   background-color: hsl(225, 100%, 94%);
 }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .card {
-  margin: auto;
+  width: 20rem;
   border-radius: 20px;
   overflow: hidden;
   background-color: hsl(225, 100%, 98%);
@@ -29,20 +35,18 @@ main {
 .card-content {
   padding: 1rem;
 }
-.card-title {
+.card-header h1 {
   text-align: center;
   margin: 1rem 0;
 }
-.card-title h1 {
+.card-header h1 {
   font-size: 1.5em;
   font-weight: bold;
   color: hsl(223, 47%, 23%);
 }
-.card-info {
+.card-header p {
   text-align: center;
   color: hsl(224, 23%, 55%);
-}
-.card-info p {
   line-height: 1.6;
 }
 .card-content {
@@ -112,7 +116,6 @@ button[type="submit"]:hover {
 .attribution {
   text-align: center;
   line-height: 1.6;
-  display: none;
 }
 .attribution a {
   text-decoration: none;
@@ -120,21 +123,4 @@ button[type="submit"]:hover {
 }
 .attribution a:active {
   color: #776bf2;
-}
-@media (min-width: 375px) {
-  .attribution {
-    display: inherit;
-  }
-}
-@media (min-width: 1400px) {
-  body {
-    height: 100%;
-    background-color: hsl(225, 100%, 94%);
-  }
-  .card {
-    width: 25%;
-    top: 50%;
-    bottom: 50%;
-    transform: translate(0%);
-  }
 }
